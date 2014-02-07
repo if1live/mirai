@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from mirai.parsers import DocumentParser
+from mirai.parsers import DocumentParser, Document
 
 RAW_TEXT = u'''
 key: value
@@ -18,6 +18,9 @@ title: subtitle'''
 CONTENT_TEXT = u'''여기부터 내용이 시작합니다
 
 title: 무시속성'''
+
+ATTR_DICT = {u'key' : u'value',
+            u'title' : u'subtitle'}
 
 
 class DocumentParserTest(unittest.TestCase):
@@ -52,7 +55,33 @@ class DocumentParserTest(unittest.TestCase):
         expected = {u'simple' : u'this-is-value'}
         self.assertEqual(expected, parser.parse_attr_doc(line))
 
-        expected = {u'key' : u'value',
-                    u'title' : u'subtitle'}
-        self.assertEqual(expected, parser.parse_attr_doc(ATTR_TEXT))
+        self.assertEqual(ATTR_DICT, parser.parse_attr_doc(ATTR_TEXT))
 
+    def test_call(self):
+        parser = DocumentParser()
+        document = parser(RAW_TEXT)
+        self.assertEqual(document.attr_dict, ATTR_DICT)
+        self.assertEqual(document.content, CONTENT_TEXT)
+
+class DocumentTest(unittest.TestCase):
+    def test_create(self):
+        content = 'ctx'
+        attr_dict = {'foo':'bar'}
+
+        document = Document(content, attr_dict)
+        self.assertEqual(content, document.content)
+        self.assertEqual(attr_dict, document.attr_dict)
+
+        document = Document(content)
+        self.assertEqual({}, document.attr_dict)
+
+    def test_get_attr(self):
+        document = Document('', {'foo':'bar'})
+        self.assertEqual('bar', document.get_attr('foo'))
+        self.assertEqual('', document.get_attr('not-exist'))
+
+    def test_getattr(self):
+        document = Document('content', {'foo':'bar'})
+        self.assertEqual('content', document.content)
+        self.assertEqual('bar', document.foo)
+        self.assertEqual('', document.not_exist)
