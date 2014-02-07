@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
+import os
 import unittest
 from mirai import helpers
 
-class DummyTest(unittest.TestCase):
+class get_content_path_Test(unittest.TestCase):
     def test_run(self):
-        self.assertEqual(helpers.foo(), 1)
+        filepath = helpers.get_content_path('sample.md')
+        self.assertEqual(True, os.path.isfile(filepath))
