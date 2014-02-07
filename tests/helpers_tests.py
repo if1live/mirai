@@ -18,6 +18,9 @@ class read_content_Test(unittest.TestCase):
         expected = 'key: test-data\nfor test'
         self.assertEqual(expected, actual)
 
+    def test_file_not_exist(self):
+        self.assertRaises(OSError, helpers.read_content, 'not-exist')
+
 class create_document_Test(unittest.TestCase):
     def test_run(self):
         helpers.create_document('testdata.md')

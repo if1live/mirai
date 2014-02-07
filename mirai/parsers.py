@@ -16,8 +16,6 @@ class Document(object):
         return markdown.markdown(self.content)
 
     def __getattr__(self, key):
-        if key in self.__dict__:
-            return self.__dict__[key]
         return self.get_attr(key)
 
     def get_attr(self, key):

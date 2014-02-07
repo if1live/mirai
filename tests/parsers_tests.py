@@ -94,3 +94,9 @@ class DocumentTest(unittest.TestCase):
         self.assertEqual('content', document.content)
         self.assertEqual('bar', document.foo)
         self.assertEqual('', document.not_exist)
+
+    def test_html(self):
+        content = 'ctx'
+        document = Document(content, {})
+        expected = '<p>ctx</p>'
+        self.assertEqual(expected, document.html)
