@@ -12,11 +12,6 @@ script:
 after_success:
   - coveralls
 
-branches:
-  only:
-    - gh-pages
-    - masters
-
 notifications:
   email: false
 
