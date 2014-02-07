@@ -16,7 +16,7 @@ branches:
   only:
     - gh-pages
     - masters
-	
+
 notifications:
   email: false
 
