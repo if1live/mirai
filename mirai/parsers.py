@@ -13,7 +13,7 @@ class Document(object):
 
     @property
     def html(self):
-        return markdown.markdown(self.content)
+        return markdown.markdown(self.content, ['footnotes'])
 
     def __getattr__(self, key):
         return self.get_attr(key)

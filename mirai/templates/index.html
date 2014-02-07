@@ -3,6 +3,20 @@
 {% from '_statichelpers.html' import static_file, render_disqus, render_google_analytics %}
 {% from '_dochelpers.html' import render_html %}
 
+{% macro render_feature_list(feature_list) %}
+<!-- Three columns of text below the carousel -->
+<div class="row">
+{% for feature in feature_list %}
+<div class="col-lg-4">
+	<img data-src="{{ static_file('js/holder.js/140x140') }}" width="140" height="140">
+	<h2>{{ feature.title }}</h2>
+	{{ render_html(feature.html) }}
+	<p><a class="btn btn-default" href="{{ feature.btn_link }}" role="button" target="_blank">{{ feature.btn_text}}</a></p>
+</div><!-- /.col-lg-4 -->
+{% endfor %}
+</div><!-- /.row -->
+{% endmacro %}
+
 <html lang="ko">
 	<head>
 		<meta charset="utf-8">
@@ -12,7 +26,7 @@
 		<meta name="author" content="">
 		<!--<link rel="shortcut icon" href="favicon.png">-->
 
-		<title>No.1 온라인 개인정보거래소 Trade My Info</title>
+		<title>{{ title }}</title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="{{ static_file('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -36,88 +50,35 @@
 		<div class="container">
 	    <div class="jumbotron info-header">
 	      <div class="container info-header-content">
-	        <h1>Trade My Info</h1>
-	        <h2>No.1 온라인 개인정보거래소</h2>
-	        <p>
-	        이제부터는 개인정보를 직접 사고팔자!<br/>
-					<strike>KC?</strike>와 같은 중간상인을 거치지말자!
-					</p>
+	        <h1>{{ jumbotron.title }}</h1>
+	        <h2>{{ jumbotron.subtitle }}</h2>
+	        {{ render_html(jumbotron.html) }}
 	        <p><a class="btn btn-primary btn-lg btn-start" role="button">시작하기</a></p>
 	      </div>
 	    </div>
   	</div>
-
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">존재하면 안되는 서비스</h4>
-					</div>
-					<div class="modal-body">
-					<p>
-					페이지를 읽어보시면 만든 의도를 아마도 이해할 수 있을겁니다.
-					하지만 <a href="http://blog.rainygirl.com/?p=960">의도를 이해 못하고 소설을 쓰는 사태</a>를 막기 위해서 간단히 작성합니다.
-					</p>
-
-					<p>
-					이 페이지를 만든건 저도 피해자 중 한명이기 때문입니다.
-					아무리 생각해도 빡쳐서 지인들의 도움을 받아 까기 위해서 만들었습니다.
-					까고싶은 내용이 많지만 여백이 좁아서 <a href="http://rigvedawiki.net/r1/wiki.php/%EC%B9%B4%EB%93%9C%EC%82%AC%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C%EC%82%AC%EA%B1%B4" target="_blank">교학사 교과서가 신뢰하는 리그베다 위키</a>로 대신합니다.
-					</p>
-					</div>
-					<div class="modal-footer">
-						<a href="http://rigvedawiki.net/r1/wiki.php/%EC%B9%B4%EB%93%9C%EC%82%AC%20%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C%EC%82%AC%EA%B1%B4" class="btn btn-primary" target="_blank">리그베다 위키</a>
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<!--<button type="button" class="btn btn-primary">Save changes</button>-->
-					</div>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-
-
 
 		<!-- Marketing messaging and featurettes
 		================================================== -->
 		<!-- Wrap the rest of the page in another container to center all the content. -->
 
 		<div class="container marketing">
-
-			<!-- Three columns of text below the carousel -->
-			<div class="row">
-				{% for feature in feature_list %}
-				<div class="col-lg-4">
-					<img data-src="{{ static_file('js/holder.js/140x140') }}" alt="500원" width="140" height="140">
-					<h2>{{ feature.title }}</h2>
-					{{ render_html(feature.html) }}
-					<p><a class="btn btn-default" href="{{ feature.btn_link }}" role="button" target="_blank">{{ feature.btn_text}}</a></p>
-				</div><!-- /.col-lg-4 -->
-				{% endfor %}
-			</div><!-- /.row -->
-
-
-			<!-- START THE FEATURETTES -->
-			<hr class="featurette-divider">
-		
 			{% for doc in doc_list %}
 			<div class="row featurette">
-				<div class="col-md-9">
+				<div class="col-md-10">
 					<h2 class="featurette-heading">{{ doc.title }} <span class="text-muted">{{ doc.subtitle }}</span></h2>
-					<div class="lead">
+					<div>
 						{{ render_html(doc.html) }}
 					</div>
 				</div>
-				<div class="col-md-3">
-					<img class="featurette-image img-responsive" data-src="{{ static_file('js/holder.js/270x270') }}" alt="Generic placeholder image">
+				<div class="col-md-2">
+					<img class="featurette-image img-responsive" data-src="{{ static_file('js/holder.js/167x167') }}" alt="Generic placeholder image">
 				</div>
 			</div>
 			
 			<hr class="featurette-divider">
 			{% endfor %}
 
-			<!-- /END THE FEATURETTES -->
-	
 			{{ render_disqus('trademyinfo') }}
 			
 			<!-- FOOTER -->

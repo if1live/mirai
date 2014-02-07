@@ -7,13 +7,19 @@ app = fl.Flask(__name__)
 
 @app.route('/')
 def view_index():
-    doc_list = [create_document('old_1.md'),
-                create_document('old_2.md')]
-    feature_list = [create_document('old_feature_1.md'),
-                    create_document('old_feature_2.md'),
-                    create_document('old_feature_3.md'), ]
+    jumbotron = create_document('jumbotron.md')
+    doc_filelist = ['movie.md',
+                    'news.md',
+                    'childbirth.md',
+                    'game.md',
+                    'contribute.md',
+                    'footnote.md']
+    doc_list = [create_document(x) for x in doc_filelist]
+
+    title = u'안전한 사전심의를 위한 모임'
 
     return fl.render_template('index.html',
-                              doc_list=doc_list,
-                              feature_list=feature_list)
+                              title=title,
+                              jumbotron=jumbotron,
+                              doc_list=doc_list,)
 
