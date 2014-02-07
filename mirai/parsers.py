@@ -28,7 +28,7 @@ class Document(object):
         return self.attr_dict.get(key, u'')
 
 class DocumentParser(object):
-    ATTR_LINE_PROG = re.compile('^(.+):(.+)$')
+    ATTR_LINE_PROG = re.compile('^([a-zA-Z\-_]+)\s*:(.+)$')
 
     def __call__(self, raw):
         attr_doc, content_doc = self.split_doc(raw)

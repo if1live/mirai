@@ -35,11 +35,20 @@ class DocumentParserTest(unittest.TestCase):
         expected = {u'with-space' : u'this is value' }
         self.assertEqual(expected, parser.parse_attr_line(line))
 
-        line = u'한글 : 유니코드 값'
-        expected = {u'한글' : u'유니코드 값'}
+        line = u'key : 유니코드 값'
+        expected = {u'key' : u'유니코드 값'}
         self.assertEqual(expected, parser.parse_attr_line(line))
 
         line = u'this is not attr line'
+        self.assertEqual(None, parser.parse_attr_line(line))
+
+    def test_parse_attr_line_if_url(self):
+        u'''
+        url의 경우 ':'가 들어간다. :가 들어간다고 전부 속성이 아닌 예이다.
+        key를 영어문자로만 한정해서 문제를 해결
+        '''
+        parser = DocumentParser()
+        line = u'[이건희, 또는 반기문 UN사무총장](http://isplus.joins.com/article/244/13681244.html) 님이신가요?'
         self.assertEqual(None, parser.parse_attr_line(line))
 
     def test_split_doc(self):
