@@ -11,6 +11,10 @@ class Document(object):
         self.content = content
         self.attr_dict = attr_dict
 
+    @property
+    def html(self):
+        return markdown.markdown(self.content)
+
     def __getattr__(self, key):
         if key in self.__dict__:
             return self.__dict__[key]
