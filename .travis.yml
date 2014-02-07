@@ -9,3 +9,6 @@ install:
 script:
   - nosetests tests --with-coverage
   - coveralls
+  
+notifications:
+  email: false
