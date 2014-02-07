@@ -5,12 +5,17 @@ python:
 
 install:
   - pip install -r requirements.txt
-
+  
 script:
   - nosetests --with-cov --cov-config .coveragerc --cov-report term --cov mirai tests/
-
+  
 after_success:
   - coveralls
+
+branches:
+  only:
+    - gh-pages
+    - masters
 
 notifications:
   email: false
