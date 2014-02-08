@@ -10,6 +10,8 @@ install:
   - pip install -r requirements.txt
 
 script:
+  - git config --global user.email "libsora25@gmail.com"
+  - git config --global user.name "Travis"
   - nosetests --with-cov --cov-config .coveragerc --cov-report term --cov mirai tests/
   - git clone https://github.com/shipduck/mirai.git output --branch gh-pages --depth 5
   - python freeze.py
@@ -17,8 +19,6 @@ script:
   - cd output
   - git add -f .
   - git commit -a -m "add new site content"
-  - git config --global user.email "libsora25@gmail.com"
-  - git config --global user.name "Travis"
   - test $? -eq "0" && git push https://${GH_TOKEN}@github.com/shipduck/mirai.git gh-pages --quiet
 
 after_success:
