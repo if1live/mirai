@@ -9,9 +9,11 @@ env:
 install:
   - pip install -r requirements.txt
 
-script:
+before_script:
   - git config --global user.email "libsora25@gmail.com"
   - git config --global user.name "Travis"
+
+script:
   - nosetests --with-cov --cov-config .coveragerc --cov-report term --cov mirai tests/
   - git clone https://github.com/shipduck/mirai.git output --branch gh-pages --depth 5
   - python freeze.py
