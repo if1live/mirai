@@ -19,12 +19,13 @@ script:
   - python freeze.py
   - cp -r build/* output
   - cp CNAME output
+
+after_success:
   - cd output
   - git add -f .
   - git commit -a -m "add new site content" --allow-empty
-  - test $? -eq "0" && git push https://${GH_TOKEN}@github.com/shipduck/mirai.git gh-pages --quiet
-
-after_success:
+  - git push https://${GH_TOKEN}@github.com/shipduck/mirai.git gh-pages --quiet
+  - cd ..
   - coveralls
 
 notifications:
