@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 
+import os
 import flask as fl
+from flask_frozen import Freezer
 from .helpers import create_document
 
 app = fl.Flask(__name__)
+output_path = os.path.join(os.path.dirname(__file__), '..', 'build')
+app.config.update(FREEZER_DESTINATION=output_path)
+
+freezer = Freezer(app)
 
 @app.route('/')
 def view_index():

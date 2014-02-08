@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from mirai import app
+from mirai.main import freezer
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    freezer.freeze()

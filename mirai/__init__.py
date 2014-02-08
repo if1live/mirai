@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from .app import app as application
+from .main import app

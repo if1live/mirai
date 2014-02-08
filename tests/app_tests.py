@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from mirai.app import app
+from mirai import app
 
 class AppTest(unittest.TestCase):
     def setUp(self):

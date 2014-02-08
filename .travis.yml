@@ -2,13 +2,23 @@ language: python
 
 python:
   - "2.7"
+env:
+  global:
+    secure: "bZtwY7NW6DRPzvhHMIw1vvxYlb5xiu4s9MIDzYO3fQbwjGttc5IMN49CGfpTwoGxXOVP4U+VBMu2plo3dVzLb4Mkdyplm8psASlSnZewzujmAC0jr1qwHBVEnTUCFABZsss2bYmf27WOdIlFbbrjdW/mDnaH4Ud4HbZHsukUKfs="
 
 install:
   - pip install -r requirements.txt
-  
+
 script:
   - nosetests --with-cov --cov-config .coveragerc --cov-report term --cov mirai tests/
-  
+  - git clone https://github.com/shipduck/mirai.git output --branch gh-pages --depth 5 --quiet
+  - python freeze.py
+  - mv build/* output
+  - cd output
+  - git add -f .
+  - git commit -a -m "add new site content"
+  - test $? -eq "0" && git push https://${GH_TOKEN}@github.com/shipduck/mirai.git gh-pages --quiet
+
 after_success:
   - coveralls
 
