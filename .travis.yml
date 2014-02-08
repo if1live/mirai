@@ -18,7 +18,7 @@ script:
   - cp -r build/* output
   - cd output
   - git add -f .
-  - git commit -a -m "add new site content"
+  - git commit -a -m "add new site content" --allow-empty --allow-empty-message "empty"
   - test $? -eq "0" && git push https://${GH_TOKEN}@github.com/shipduck/mirai.git gh-pages --quiet
 
 after_success:
