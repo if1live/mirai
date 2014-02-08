@@ -15,7 +15,7 @@ script:
   - nosetests --with-cov --cov-config .coveragerc --cov-report term --cov mirai tests/
   - git clone https://github.com/shipduck/mirai.git output --branch gh-pages --depth 5
   - python freeze.py
-  - mv build/* output
+  - cp -r build/* output
   - cd output
   - git add -f .
   - git commit -a -m "add new site content"
