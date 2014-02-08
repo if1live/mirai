@@ -16,6 +16,7 @@ script:
   - git clone https://github.com/shipduck/mirai.git output --branch gh-pages --depth 5
   - python freeze.py
   - cp -r build/* output
+  - cp CNAME output
   - cd output
   - git add -f .
   - git commit -a -m "add new site content" --allow-empty
