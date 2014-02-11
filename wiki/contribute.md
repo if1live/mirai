@@ -14,7 +14,7 @@ subtitle: 우리는 기다린다, 너의 참여
 
 우리의 꿈은 간단합니다. 이 꿈을 이루기 위해서 앞으로도 움직일겁니다.
 
-* 인디게임 개발자가 자신이 만든 게임을 제약 없이 배포할수 있는 세계
+* 인디게임개발자가 자신이 만든 게임(예를 들면 [탐정뎐][탐정뎐])을 제약 없이 배포할수 있는 세계
 * 게임이 영화, 음반과 마찬가지로 "사전심의"가 아닌 "사후심의"를 받는 세계
 * 게임이 마약으로 취급받지 않는 세계
 
@@ -29,6 +29,7 @@ p.s. : 위에서 언급된 수많은 링크는 게임 사전심의를 공격하�
 
 [심의소식]: http://www.gamemeca.com/news/view.php?gid=474257
 [94헌가6]: http://search.ccourt.go.kr/ths/pr/ths_pr0103_P1.do?seq=0&cname=%ED%8C%90%EB%A1%80%EC%A7%91&eventNum=282&eventNo=94%ED%97%8C%EA%B0%806&pubFlag=0&cId=010300&page&qrylist=94%ED%97%8C%EA%B0%806%7C94%ED%97%8C%EA%B0%806
+[탐정뎐]: http://rigvedawiki.net/r1/wiki.php/%ED%83%90%EC%A0%95%EB%8E%90
 [repo]: https://github.com/shipduck/mirai
 [twitter-tintypemolly]: https://twitter.com/TintypeMolly
 [twitter-if1live]: https://twitter.com/if1live  
