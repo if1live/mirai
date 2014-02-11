@@ -15,10 +15,10 @@ before_script:
 
 script:
   - nosetests --with-cov --cov-config .coveragerc --cov-report term --cov mirai tests/
-  - git clone https://github.com/shipduck/mirai.git output --branch gh-pages --depth 5
+  - git clone https://github.com/shipduck/stop-game-prior-censorship.git output --branch gh-pages --depth 5
   - python freeze.py
   - cp -r build/* output
-  - cp CNAME output
+  - echo "stop-game-prior-censorship.libsora.so" > output/CNAME
 
 after_success:
   - cd output
