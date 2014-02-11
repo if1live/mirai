@@ -24,7 +24,7 @@ after_success:
   - cd output
   - git add -f .
   - git commit -a -m "add new site content" --allow-empty
-  - git push https://${GH_TOKEN}@github.com/shipduck/mirai.git gh-pages --quiet
+  - git push https://${GH_TOKEN}@github.com/shipduck/stop-game-prior-censorship.git gh-pages --quiet
   - cd ..
   - coveralls
 
