@@ -1,16 +1,58 @@
 title: 게임은 사전심의의 혜택을 누리고 있습니다.
 
-[게임산업진흥에 관한 법률][게임산업진흥에 관한 법률]
+게임도 과거에는 다른 분야와 마찬가지로 사전심의가 없었습니다. 
+그래서 바다이야기와 같은 사행성 게임이 사회를 위협한 적이 있습니다. 
+하지만 지금은 다릅니다. 
+[게임산업진흥에 관한 법률][게임산업진흥에 관한 법률](이라고 쓰고 게임산업통제에 관한 법률이라고 읽는다)를 기반으로 사전심의를 하고 있습니다. 
+다시는 [바다이야기][바다이야기]와 같은 사행성 게임이 세상에 등장할 수 없습니다.
 
-[바다이야기][바다이야기]
+게임에 사전심의를 도입하고 몇년동안 운영한 결과 여러가지 장점을 발견했습니다.
 
-[GTA][GTA]
+첫번째는 일정 수준의 자격을 갖춘 개발팀만이 게임을 개발할 수 있게 되었습니다. 
+멀쩡한 사무실도 구할 정도의 돈도 없는 개발사는 게임도 출시하지 못합니다.[^오피스텔지붕] 
+자본력이 검증되지 않은 회사에서 만든 게임이라고 해봣자 뭘 만들수 있겠습니까?[^braid] 
+진정한 명작 게임은 자본력이 검증된 대기업에서 만들수 있습니다.[^cnc4]
 
-[폴아웃: 뉴 베가스][뉴베가스] 7관왕
+두번째로는 약간의 사행성 요소라도 철저히 잡아내서 청소년을 사행성 요소로부터 보호할 수 있습니다. 
+[니노쿠니: 하얀 성회의 여왕][니노쿠니]이 청소년이용불가 등급을 받은것은 좋은 사례입니다. 
+겉보기에는 평범한 RPG게임 같아 보이지만 이것은 위장입니다. 
+그 뒷면에는 게임머니를 이용해서 블랙잭, 슬럿머신와 같은 사행성 요소가 존재합니다. 
+사전심의를 통해서 청소년의 도박 조기교육을 방지할 수 있었습니다. 
+다른 좋은 예로 "포켓몬스터 black & white"도 있습니다. 
+청소년을 사행성 요소로부터 보호하기 위해 일본판에는 존재하는 카지노 요소를 국내판에서는 삭제했습니다.
+
+세번째로는 표현의 자유가 사회의 미풍양속을 어지럽히는 것을 막을 수 있습니다.
+인디게임은 자본에 묶여있지 않아서 새로운 시도를 할 수 있습니다. 
+또한 새로운 주제도 담을 수도 있습니다. 
+하지만 게임은 세상에 출시된 이후에 빠른 속도로 배포되기 때문에 파급효과를 예측할 수 없습니다. 
+게임은 파급효과를 예측할 수 없기 때문에 사회에 긍정적인 영향을 줄지 부정적인 영향을 줄지를 미리 검증해야 합니다.
+사전심의가 고작 0.35% 정조의 심의률을 보여다는것을 비꼬는 게임이 세상에 공개되는 것은 사전심의를 통해서 막아야합니다.[^grbt] 
+정치적 의도를 가진 게임이 세상에 공개되는것 또한 사회에 악영향을 줄수있으니 막아야 합니다.[^freedom-bridge]
+"열개의 사행성 게임을 잡는 것보다 한 개의 무고한 게임을 만들지 말아야 한다"라는 무책임한 말이 있습니다. 
+[탐정뎐][탐정뎐]을 허용해버리면 다른 수많은 게임도 제대로 검열을 하지 못할 수 있습니다. 
+이를 사전에 방지해야 합니다. 
+
+이런 장점에도 불구하고 "94헌가6"으로 영화 사전심의는 위헌으로 인정되었습니다. 
+하지만 게임 사전심의는 위헌처리가 된적이 없습니다. 
+덕분에 게임업계는 영화업계에서는 누릴 수 없는 위와 같은 혜택을 받고 있습니다. 
+다른 업계에서도 게임 사전심의를 배워서 하루빨리 사전심의를 도입해야 합니다.
+
+[^게임산업진흥에 관한 법률]: [게임산업진흥에 관한 법률][게임산업진흥에 관한 법률]
+[^바다이야기]: [바다이야기][바다이야기]
+[^탐정뎐]: [탐정뎐][탐정뎐]
+[^니노쿠니]: [니노쿠니][니노쿠니]
+[^오피스텔지붕]: [입주오피스텔 주차장 지붕때문에 게임심의 못받는 대한민국.ㅜ.ㅜ][오피스텔지붕]
+[^braid]: [Braid][braid]. 개발자 '조나단 블로우'의 개인 제작 인디게임이다.
+[^cnc4]: [커맨드 앤 컨커4 타이베리안 트와일라잇][cnc4]. EA에서 만들었으나 제대로 망했다. 내용과 주석이 반대인건 잘못 쓴거 아니다.
+[^grbt]: [사후검토: GRBT Game Rating Board Tycoon][grbt]
+[^freedom-bridge]: [freedom-bridge][freedom-bridge]
 
 [게임산업진흥에 관한 법률]: http://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EA%B2%8C%EC%9E%84%EC%82%B0%EC%97%85%EC%A7%84%ED%9D%A5%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0
-[바다이야기]: http://rigvedawiki.net/r1/wiki.php/%EB%B0%94%EB%8B%A4%EC%9D%B4%EC%95%BC%EA%B8%B0 
-[GTA]: http://rigvedawiki.net/r1/wiki.php/Grand%20Theft%20Auto%20%EC%8B%9C%EB%A6%AC%EC%A6%88?action=show&redirect=GTA
-[뉴베가스]: http://www.grb.or.kr/Statistics/Popup/Pop_ReasonInfo.aspx?592fc5c95143ba42806db09d142e4055cecd98f227eaeaf17ed258610ac557e8
-
-
+[바다이야기]: http://rigvedawiki.net/r1/wiki.php/%EB%B0%94%EB%8B%A4%EC%9D%B4%EC%95%BC%EA%B8%B0
+[탐정뎐]: http://rigvedawiki.net/r1/wiki.php/%ED%83%90%EC%A0%95%EB%8E%90
+[니노쿠니]: https://www.grb.or.kr/Statistics/Popup/Pop_ReasonInfo.aspx?4f802ef6ac3607c0aedba6a933b62221cecd98f227eaeaf17ed258610ac557e8
+[오피스텔지붕]: http://dvdprime.donga.com/bbs/view.asp?major=ME&minor=E1&master_id=40&bbsfword_id=&master_sel=&fword_sel=&SortMethod=&SearchCondition=&SearchConditionTxt=&bbslist_id=1846609&page=1
+[braid]: http://rigvedawiki.net/r1/wiki.php/Braid
+[cnc4]: http://rigvedawiki.net/r1/wiki.php/%EC%BB%A4%EB%A7%A8%EB%93%9C%20%EC%95%A4%20%EC%BB%A8%EC%BB%A44%20%ED%83%80%EC%9D%B4%EB%B2%A0%EB%A6%AC%EC%95%88%20%ED%8A%B8%EC%99%80%EC%9D%BC%EB%9D%BC%EC%9E%87
+[grbt]: http://www.heartcomplex.net/blogs/entry/%EC%82%AC%ED%9B%84%EA%B2%80%ED%86%A0-GRBT-Game-Rating-Board-Tycoon
+[freedom-bridge]: http://www.necessarygames.com/my-games/freedom-bridge

@@ -65,14 +65,11 @@
 		<div class="container marketing">
 			{% for doc in doc_list %}
 			<div class="row featurette">
-				<div class="col-md-10">
+				<div class="col-md-12">
 					<h2 class="featurette-heading">{{ doc.title }} <span class="text-muted">{{ doc.subtitle }}</span></h2>
 					<div>
 						{{ render_html(doc.html) }}
 					</div>
-				</div>
-				<div class="col-md-2">
-					<img class="featurette-image img-responsive" src="#" alt="Generic placeholder image">
 				</div>
 			</div>
 			
@@ -85,10 +82,8 @@
 			<footer>
 				<p class="pull-right"><a href="#">Back to top</a></p>
 				<p>&copy; 2014
-					<a href="https://twitter.com/if1live">@if1live</a> |
 					<a href="https://twitter.com/TintypeMolly">@tintypemolly</a> |
-					<a href="https://twitter.com/ang0123dev">@ang0123dev</a> |
-					<a href="http://rigvedawiki.net/r1/wiki.php/%EA%B7%B8%EB%9F%B0%20%EA%B1%B0%20%EC%97%86%EB%8B%A4">@zzapcoder</a>
+					<a href="https://twitter.com/if1live">@if1live</a>
 				</p>
 			</footer>
 

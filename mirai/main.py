@@ -16,10 +16,8 @@ def view_index():
     jumbotron = create_document('jumbotron.md')
     doc_filelist = ['movie.md',
                     'news.md',
-                    'childbirth.md',
                     'game.md',
-                    'contribute.md',
-                    'footnote.md']
+                    'contribute.md']
     doc_list = [create_document(x) for x in doc_filelist]
 
     title = u'안전한 사전심의를 위한 모임'
